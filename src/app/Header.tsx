@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import NavLinks from "./NavLinks";
+import SearchBox from "./SearchBox";
 
 const Header = () => {
   return (
@@ -21,6 +22,8 @@ const Header = () => {
       </div>
       {/* NavLinks  */}
       <NavLinks/>
+      {/* Search Box  */}
+      <SearchBox/>
     </header>
   );
 };
