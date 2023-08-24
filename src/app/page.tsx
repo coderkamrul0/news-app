@@ -1,9 +1,15 @@
 import React from 'react'
+import { categories } from '../../constants'
+import fetchNews from '../../Utility/fetchNews'
 
-const HomePage = () => {
+ async function HomePage() {
+
+  // fetch news data
+  const news: NewsResponse = await fetchNews(categories.join(','))
+  console.log(news);
   return (
     <div>
-      <h1 className='text-4xl font-bold'>Home Page</h1>
+      {/* NewsList  */}
     </div>
   )
 }
